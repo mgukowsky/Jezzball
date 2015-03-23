@@ -2,19 +2,30 @@
   <head>
     <title>Jezzball</title>
     <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="jezzball.css">
   </head>
   <body>
-    <canvas class="jezzball"></canvas>
-
+    <h1>Jezzball!</h1>
+    <canvas id="jezzball" class="horizontal-wall"></canvas>
+    <p>Written by Matt Gukowsky | View on <a href="http://github.com/mgukowsky/jezzball">GitHub</a></p>
+    <script type="application/javascript" src="vendor/jquery-1.11.2.js"></script>
+    <script type="application/javascript" src="vendor/underscore.js"></script>
+    <script type="application/javascript" src="lib/util.js"></script>
+    <script type="application/javascript" src="lib/wallBuilder.js"></script>
+    <script type="application/javascript" src="lib/cell.js"></script>
+    <script type="application/javascript" src="lib/movingObject.js"></script>
+    <script type="application/javascript" src="lib/game.js"></script>
+    <script type="application/javascript" src="lib/gameView.js"></script>
     <script type="application/javascript">
       (function () {
-        var canvasEl = document.getElementsByTagName("canvas")[0];
+        var canvasEl = $("canvas")[0];
         canvasEl.width = Jezzball.Game.DIM_X;
-        canvasEl.height = Asteroids.Game.DIM_Y;
+        canvasEl.height = Jezzball.Game.DIM_Y;
 
         var ctx = canvasEl.getContext("2d");
         var game = new Jezzball.Game();
-        new Asteroids.GameView(game, ctx).start();
+        new Jezzball.GameView(game, ctx).start();
       })();
     </script>
   </body>
