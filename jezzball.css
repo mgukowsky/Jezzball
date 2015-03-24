@@ -22,3 +22,27 @@ p {
   text-align: center;
   font-family: 'Francois One', sans-serif;
 }
+
+label.score {
+  border: 1px solid green;
+  display: block;
+  width: 100px;
+  margin: auto;
+}
+
+label.lives {
+  border: 1px solid red;
+  display: block;
+  width: 100px;
+  margin: auto;
+}
+
+button {
+  display: block;
+  width: 200px;
+  margin: 5px auto;
+}
+
+button.clicked {
+  border: 1px solid red;
+}
