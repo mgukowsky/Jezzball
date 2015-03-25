@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="jezzball.css">
   </head>
   <body>
+    <div class="content">
     <h1>Jezzball!</h1>
     <label class="score">
       Score
@@ -15,9 +16,18 @@
       Lives
       <section class="lives"></section>
     </label>
-    <button class="pause clicked">Click to start</button>
+    <label class="level">
+      Level
+      <section class="level"></section>
+    </label>
+    <label class="cleared">
+      Area Cleared
+      <section class="cleared"></section>
+    </label>
+    <button class="pause clicked">Click to START</button>
     <canvas id="jezzball" class="horizontal-wall"></canvas>
     <p>Written by Matt Gukowsky | View on <a href="http://github.com/mgukowsky/jezzball">GitHub</a></p>
+  </div>
     <script type="application/javascript" src="vendor/jquery-1.11.2.js"></script>
     <script type="application/javascript" src="vendor/underscore.js"></script>
     <script type="application/javascript" src="lib/util.js"></script>

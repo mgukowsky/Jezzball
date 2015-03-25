@@ -13,36 +13,90 @@ canvas {
 }
 
 h1 {
-  font-family: 'Francois One', sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
+  border-bottom: 2px solid blue;
+  border-top: 2px solid blue;
+
 }
 
 p {
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
+  padding: 10px 0;
   text-align: center;
+}
+
+div.content{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 750px;
+  margin: auto;
+  position: absolute;
+  left: 500px;
+}
+
+body {
+  background-color: #ccc;
   font-family: 'Francois One', sans-serif;
 }
 
-label.score {
-  border: 1px solid green;
+label {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  float: right;
+  height: 50px;
+  margin-right: 10px;
+  border: 1px solid black;
   display: block;
+  border-radius: 20px;
+  padding: 10px;
   width: 100px;
-  margin: auto;
+
+}
+
+label.score {
+  background-color: green;
+  top: 100px;
+  left: 19px;
 }
 
 label.lives {
-  border: 1px solid red;
-  display: block;
-  width: 100px;
-  margin: auto;
+  background-color: red;
+  top: 200px;
+  left: 150px;
+}
+
+label.level {
+  background-color: #fff;
+  color: #000;
+  top: 100px;
+  right: 363px;
+  text-align: right;
+}
+
+label.cleared {
+  background-color: black;
+  top: 200px;
+  right: 230px;
+  text-align: right;
+  font-size: 18px;
 }
 
 button {
   display: block;
   width: 200px;
   margin: 5px auto;
+  border: 1px solid blue;
+  border-radius: 20px;
+  position: relative;
+  left:250px;
+  font-size: 30px;
 }
 
 button.clicked {
-  border: 1px solid red;
+  border: 1px solid blue;
+  background-color: yellow;
 }
