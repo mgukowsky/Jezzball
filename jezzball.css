@@ -35,6 +35,7 @@ div.content{
   margin: auto;
   position: absolute;
   left: 500px;
+  top: 50px;
 }
 
 body {
